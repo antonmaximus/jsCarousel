@@ -6,7 +6,7 @@
 
 **Author:** Anton
 
-**Demo:** http://antonmaximus.github.io/forsizmek/build/
+**Demo:** http://antonmaximus.github.io/jsCarousel/build/
 
 **Description:**
 
