@@ -21,6 +21,8 @@ body {
   }
 }
 
+
+
 .carousel {
   position: relative; //Because the navigation will be absolute
   margin: 10px auto;
@@ -144,8 +146,12 @@ p {
   margin: 0 auto 40px;
   text-align: left; 
 
+  h1 {
+    padding-bottom: 8px;
+  }
+
   p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     max-width: 650px;
   }
 
