@@ -1,6 +1,6 @@
 # JavaScript Carousel
 
-Just some JavaScript OOP
+A JavaScript OOP
 --------------
 *"Look Ma, no jQuery!"*
 
