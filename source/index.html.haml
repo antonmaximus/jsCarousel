@@ -48,24 +48,25 @@ body_class: index
   and the data was in JSONP instead of JSON. Background-color is of a blue hue.
 
 
-/ scripts
-= javascript_include_tag "helperFunctions.js"
-= javascript_include_tag "helperFunctionsFlickr.js"
-= javascript_include_tag "controllers.js"
-= javascript_include_tag "views.js"
-= javascript_include_tag "models.js"
+/ / scripts
+/ = javascript_include_tag "helperFunctions.js"
+/ = javascript_include_tag "helperFunctionsFlickr.js"
+/ = javascript_include_tag "controllers.js"
+/ = javascript_include_tag "views.js"
+/ = javascript_include_tag "models.js"
 
+= javascript_include_tag "application.js"
 
 / More Scripts
 :javascript
-  var carouselA = new CAROUSEL.Carousel({ divId: 'carouselA', jsonPath: './javascripts/jsonImages.json'});
+  var carouselA = new CAROUSEL.Carousel({ divId: 'carouselA', jsonPath: './javascripts/json/jsonImages.json'});
 
-  var inputTwo = { divId: 'carouselB', jsonPath: './javascripts/jsonImages.json', 
+  var inputTwo = { divId: 'carouselB', jsonPath: './javascripts/json/jsonImages.json', 
     tranTime: 4000, width: 600, height: 200, backgroundColor: 'pink'};
   var carouselB = new CAROUSEL.Carousel(inputTwo);
 
 
-  var inputC = { divId: 'carouselC', jsonPath: './javascripts/jsonImagesLettered.json', 
+  var inputC = { divId: 'carouselC', jsonPath: './javascripts/json/jsonImagesLettered.json', 
      width: 300, height: 500, backgroundColor: 'rgba(40, 200, 100, 0.55)'};
   var carouselC = new CAROUSEL.Carousel(inputC);
 
