@@ -46,7 +46,8 @@ var CAROUSELVIEW = (function(globals, prev) {
 
     navigation.appendChild(leftChev);
     navigation.appendChild(rightChev);
-    navigation.appendChild(download);
+    if (obj.options.download)
+      navigation.appendChild(download);
     navigation.appendChild(pause);
 
     // 'afterbegin' -- Just inside the element, before its first child.

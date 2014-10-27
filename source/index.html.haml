@@ -6,7 +6,8 @@ body_class: index
 .intro
   %h1 JavaScript OOP: Carousel From Scratch
   %p 
-    Below are four Carousel objects created from the same Carousel class.  
+    Below are four Carousel objects created from the same Carousel class. 
+    %a{target: '_blank', href: 'https://github.com/antonmaximus/jsCarousel'} Source code can be seen on Github.
     Basic features are as follows:
   %ul 
     %li Viewing size is 400x300 pixels
@@ -48,14 +49,17 @@ body_class: index
   and the data was in JSONP instead of JSON. Background-color is of a blue hue.
 
 
-/ / scripts
-/ = javascript_include_tag "helperFunctions.js"
-/ = javascript_include_tag "helperFunctionsFlickr.js"
-/ = javascript_include_tag "controllers.js"
-/ = javascript_include_tag "views.js"
-/ = javascript_include_tag "models.js"
+/ scripts
+- if build?
+  = javascript_include_tag "application.js"          
+- else
+  = javascript_include_tag "src/helperFunctions.js"
+  = javascript_include_tag "src/helperFunctionsFlickr.js"
+  = javascript_include_tag "src/controllers.js"
+  = javascript_include_tag "src/views.js"
+  = javascript_include_tag "src/models.js"
 
-= javascript_include_tag "application.js"
+
 
 / More Scripts
 :javascript
@@ -71,5 +75,5 @@ body_class: index
   var carouselC = new CAROUSEL.Carousel(inputC);
 
   var inputD = { divId: 'carouselD', flickrTag: 'dog', 
-      backgroundColor: 'rgba(0, 100, 200, 0.25)', width: 640, height: 400};
+      backgroundColor: 'rgba(0, 100, 200, 0.25)', width: 640, height: 400, download: 'false'};
   var carouselD = new CAROUSEL.Carousel(inputD);

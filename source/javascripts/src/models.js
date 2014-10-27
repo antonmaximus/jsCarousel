@@ -43,7 +43,8 @@ var CAROUSEL = (function(globals, prev) {
       w: input.width || 400, //width
       h: input.height || 300, //height
       bg : input.backgroundColor,
-      time: Math.abs(input.tranTime) || 1800
+      time: Math.abs(input.tranTime) || 1800,
+      download: (input.download === 'false') ? false : true
     };
     this.options.viewMode = this.options.w >= this.options.h ? 'landscape' : 'portrait';
 
