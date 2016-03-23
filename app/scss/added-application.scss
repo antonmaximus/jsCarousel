@@ -1,0 +1,36 @@
+.half {
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.rightside {
+  vertical-align: top;
+  text-align: left;
+  white-space: normal;
+
+
+  ul {
+    padding-left: 30px;
+  }
+
+  .codeHolder {
+    width: 99%;
+
+    pre {
+      padding: 0;
+    }
+  }
+}
+
+.row {
+   white-space: nowrap; 
+}
+
+.container {
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+
+// code{background:#F8F8FF; border:black dashed 1px; padding:6px}
