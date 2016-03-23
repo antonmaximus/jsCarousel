@@ -7,7 +7,7 @@ A JavaScript OOP
 
 **Author:** Anton
 
-**Demo:** http://antonmaximus.github.io/jsCarousel/build/
+**Demo:** http://antonmaximus.github.io/jsCarousel/dist/
 
 **Description:**
 
