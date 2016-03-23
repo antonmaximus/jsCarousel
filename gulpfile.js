@@ -100,10 +100,10 @@ gulp.task('htmlmin', function() {
     .pipe(gulp.dest('dist'))
 });
 
-// Copying fonts 
-gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
+// Copying json 
+gulp.task('copyjson', function() {
+  return gulp.src('app/js/json/**/*')
+    .pipe(gulp.dest('dist/js/json'))
 })
 
 // Cleaning 
@@ -137,7 +137,7 @@ gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
     'fileinclude', 
-    ['sass', 'useref', 'images', 'fonts', 'fontawesome'],
+    ['sass', 'useref', 'images', 'copyjson', 'fontawesome'],
     'htmlmin',
     callback
   )
